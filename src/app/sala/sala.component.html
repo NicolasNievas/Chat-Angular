@@ -1,0 +1,16 @@
+<<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<div class="contentSala mt-4">
+    <div class="card">
+      <div class="card-header">
+        Sala de chat
+      </div>
+      <div class="card-body">
+        <h5 class="title">Conversación</h5>
+        <ul>
+          <li *ngFor="let mensaje of mensajes">{{ mensaje }}</li>
+        </ul>
+      </div>
+    </div>
+    <app-msj-user (mensaje1)="mostrarMsj($event)" (mensaje2)="mostrarMsj($event)"></app-msj-user>
+  </div>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

@@ -1,0 +1,22 @@
+<div class="contChat d-flex justify-content-xl-center">
+    <div class="card flex-fill">
+        <div class="card-header">
+            Usuario: Pepe
+        </div>
+        <div class="card-body">
+            <label for="floatingTextarea2">Mensaje</label>
+            <textarea class="form-control" placeholder="Leave a comment here" style="height: 100px;" [(ngModel)]="txtChatPepe"></textarea>
+            <button type="button" class="btn btn-primary" (click)="SaveMsjPepe()" >Guardar</button>
+        </div>
+    </div>
+    <div class="card flex-fill">
+        <div class="card-header">
+            Usuario: Maria
+        </div>
+        <div class="card-body">
+            <label for="floatingTextarea2">Mensaje</label>
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px;" [(ngModel)]="txtChatMaria"></textarea>
+            <button type="button" class="btn btn-primary" (click)="SaveMsjMaria()" >Guardar</button>
+        </div>
+    </div>
+</div>
